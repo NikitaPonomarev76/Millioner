@@ -32,232 +32,231 @@ void main() {
     }
 
 
-        if (isgaming) {
-            System.out.println("🔹 ВОПРОС 2 🔹 ");
+    if (isgaming) {
+        System.out.println("🔹 ВОПРОС 2 🔹 ");
+        System.out.println();
+        System.out.println("""
+                Кто написал знаменитую пьесу "Ромео и Джульетта"?
+                
+                1. Лев Толстой
+                2. Уильям Шекспир
+                3. Антон Чехов
+                4. Данте Алигьери
+                """);
+        System.out.print("Ответ:");
+        int answer2 = scanner.nextInt();
+        if (answer2 == 2) {
+            balance += 1000;
+            System.out.println("ПОЗДРАВЛЯЮ! Вы ответили правильно +1000$ ");
             System.out.println();
-            System.out.println("""
-                    Кто написал знаменитую пьесу "Ромео и Джульетта"?
-                    
-                    1. Лев Толстой
-                    2. Уильям Шекспир
-                    3. Антон Чехов
-                    4. Данте Алигьери
-                    """);
-            System.out.print("Ответ:");
-            int answer2 = scanner.nextInt();
-            if (answer2 == 2) {
-                balance += 1000;
-                System.out.println("ПОЗДРАВЛЯЮ! Вы ответили правильно +1000$ ");
-                System.out.println();
-                System.out.println("💰 " + "Ваш баланс: " + balance + "$");
+            System.out.println("💰 " + "Ваш баланс: " + balance + "$");
 
-            } else {
-                System.out.println("НЕПРАВИЛЬНО");
-                isgaming = false;
-            }
+        } else {
+            System.out.println("НЕПРАВИЛЬНО");
+            isgaming = false;
         }
+    }
 
 
+    if (isgaming) {
+        System.out.println("🔹 ВОПРОС 3 🔹 ");
+        System.out.println();
+        System.out.println("""
+                Какая страна является самой большой  в мире?
+                
+                1. Россия
+                2. Канада
+                3. Китай
+                4. США
+                """);
+        System.out.print("Ответ: ");
+        int answer3 = scanner.nextInt();
+        if (answer3 == 1) {
+            balance += 1000;
+            System.out.println("ПОЗДРАВЛЯЮ! Вы ответили правильно +1000$ ");
+            System.out.println();
+            System.out.println("💰 " + "Ваш баланс: " + balance + "$");
 
-            if (isgaming) {
-                System.out.println("🔹 ВОПРОС 3 🔹 ");
-                System.out.println();
-                System.out.println("""
-                        Какая страна является самой большой  в мире?
-                        
-                        1. Россия
-                        2. Канада
-                        3. Китай
-                        4. США
-                        """);
-                System.out.print("Ответ: ");
-                int answer3 = scanner.nextInt();
-                if (answer3 == 1) {
-                    balance += 1000;
-                    System.out.println("ПОЗДРАВЛЯЮ! Вы ответили правильно +1000$ ");
-                    System.out.println();
-                    System.out.println("💰 " + "Ваш баланс: " + balance + "$");
+        } else {
+            System.out.println("НЕПРАВИЛЬНО");
+            isgaming = false;
+        }
+    }
+    if (isgaming) {
+        System.out.println("🔹 ВОПРОС 4 🔹 ");
+        System.out.println();
+        System.out.println("""
+                Какой город является столицей Японии?
+                
+                1. Осака
+                2. Токио
+                3. Киото
+                4. Нагасаки
+                
+                """);
+        System.out.print("Ответ: ");
+        int answer4 = scanner.nextInt();
+        if (answer4 == 2) {
+            balance += 1000;
+            System.out.println("ПОЗДРАВЛЯЮ! Вы ответили правильно +1000$ ");
+            System.out.println();
+            System.out.println("💰 " + "Ваш баланс: " + balance + "$");
 
-                } else {
-                    System.out.println("НЕПРАВИЛЬНО");
-                    isgaming = false;
-                }
-            }
-                if (isgaming) {
-            System.out.println("🔹 ВОПРОС 4 🔹 ");
+        } else {
+            System.out.println("НЕПРАВИЛЬНО");
+            isgaming = false;
+        }
+    }
+    if (isgaming) {
+        System.out.println("🔹 ВОПРОС 5 🔹 ");
+        System.out.println();
+        System.out.println("""
+                Какой элемент периодической таблицы обозначается буквой "O"?
+                
+                1. Кислород
+                2. Озон
+                3. Олово
+                4. Осмий
+                """);
+        System.out.print("Ответ: ");
+        int answer5 = scanner.nextInt();
+        if (answer5 == 1) {
+            balance += 1000;
+            System.out.println("ПОЗДРАВЛЯЮ! Вы ответили правильно +1000$ ");
             System.out.println();
-            System.out.println("""
-                            Какой город является столицей Японии?
-                            
-                            1. Осака
-                            2. Токио
-                            3. Киото
-                            4. Нагасаки
-                            
-                            """);
-                    System.out.print("Ответ: ");
-                    int answer4 = scanner.nextInt();
-                    if (answer4 == 2) {
-                        balance += 1000;
-                        System.out.println("ПОЗДРАВЛЯЮ! Вы ответили правильно +1000$ ");
-                        System.out.println();
-                        System.out.println("💰 " + "Ваш баланс: " + balance + "$");
+            System.out.println("💰 " + "Ваш баланс: " + balance + "$");
+        } else {
+            System.out.println("НЕПРАВИЛЬНО");
+            isgaming = false;
+        }
+    }
+    if (isgaming) {
+        System.out.println("🔹 ВОПРОС 6 🔹 ");
+        System.out.println();
+        System.out.println("""
+                какой химический элемент в периодической таблице обозначается символом “Au”?
+                
+                1. Алюминий
+                2. Золото
+                3. Серебро
+                4. Медь
+                """);
+        System.out.print("Ответ: ");
+        int answer6 = scanner.nextInt();
+        if (answer6 == 2) {
+            balance += 1000;
+            System.out.println("ПОЗДРАВЛЯЮ! Вы ответили правильно +1000$ ");
+            System.out.println();
+            System.out.println("💰 " + "Ваш баланс: " + balance + "$");
+        } else {
+            System.out.println("НЕПРАВИЛЬНО");
+            isgaming = false;
+        }
+    }
+    if (isgaming) {
+        System.out.println("🔹 ВОПРОС 7 🔹 ");
+        System.out.println();
+        System.out.println("""
+                 Кто автор романа "Война и мир"?
+                
+                1. Фёдор Достоевский
+                2. Лев Толстой
+                3. Михаил Лермонтов
+                4. Антон Чехов
+                """);
+        System.out.print("Ответ: ");
+        int answer7 = scanner.nextInt();
+        if (answer7 == 2) {
+            balance += 1000;
+            System.out.println("ПОЗДРАВЛЯЮ! Вы ответили правильно +1000$ ");
+            System.out.println();
+            System.out.println("💰 " + "Ваш баланс: " + balance + "$");
+        } else {
+            System.out.println("НЕПРАВИЛЬНО");
+            isgaming = false;
+        }
+    }
+    if (isgaming) {
+        System.out.println("🔹 ВОПРОС 8 🔹 ");
+        System.out.println();
+        System.out.println("""
+                Какое самое высокое здание в мире?
+                
+                1. Бурдж-Халифа
+                2. Останкинская башня
+                3. Эйфелева башня
+                4. Шанхайская башня
+                """);
+        System.out.print("Ответ: ");
+        int answer8 = scanner.nextInt();
+        if (answer8 == 1) {
+            balance += 1000;
+            System.out.println("ПОЗДРАВЛЯЮ! Вы ответили правильно +1000$ ");
+            System.out.println();
+            System.out.println("💰 " + "Ваш баланс: " + balance + "$");
+        } else {
+            System.out.println("НЕПРАВИЛЬНО");
+            isgaming = false;
+        }
+    }
+    if (isgaming) {
+        System.out.println("🔹 ВОПРОС 9 🔹 ");
+        System.out.println();
+        System.out.println("""
+                Какая река является самой длинной в мире?
+                
+                1. Нил
+                2. Амазонка
+                3. Янцзы
+                4. Миссисипи
+                """);
+        System.out.print("Ответ: ");
+        int answer9 = scanner.nextInt();
+        if (answer9 == 2) {
+            balance += 1000;
+            System.out.println("ПОЗДРАВЛЯЮ! Вы ответили правильно +1000$ ");
+            System.out.println();
+            System.out.println("💰 " + "Ваш баланс: " + balance + "$");
 
-                    } else {
-                        System.out.println("НЕПРАВИЛЬНО");
-                        isgaming = false;
-                    }
-                }
-                if (isgaming) {
-            System.out.println("🔹 ВОПРОС 5 🔹 ");
+        } else {
+            System.out.println("НЕПРАВИЛЬНО");
+            isgaming = false;
+        }
+    }
+    if (isgaming) {
+        System.out.println("🔹 ВОПРОС 10 🔹 ");
+        System.out.println();
+        System.out.println("""
+                Кто написал оперу "Кармен"?
+                
+                1. Джузеппе Верди
+                2. Жорж Бизе
+                3. Вольфганг Амадей Моцарт
+                4. Рихард Вагнер
+                """);
+        System.out.print("Ответ: ");
+        int answer10 = scanner.nextInt();
+        if (answer10 == 2) {
+            balance += 1000;
+            System.out.println("ПОЗДРАВЛЯЮ! Вы ответили правильно +1000$ ");
+            System.out.println();
+            System.out.println("💰 " + "Ваш баланс: " + balance + "$");
             System.out.println();
             System.out.println("""
-                            Какой элемент периодической таблицы обозначается буквой "O"?
-                            
-                            1. Кислород
-                            2. Озон
-                            3. Олово
-                            4. Осмий
-                            """);
-                    System.out.print("Ответ: ");
-                    int answer5 = scanner.nextInt();
-                    if (answer5 == 1) {
-                        balance += 1000;
-                        System.out.println("ПОЗДРАВЛЯЮ! Вы ответили правильно +1000$ ");
-                        System.out.println();
-                        System.out.println("💰 " + "Ваш баланс: " + balance + "$");
-                    } else {
-                        System.out.println("НЕПРАВИЛЬНО");
-                        isgaming = false;
-                    }
-                }
-                if (isgaming) {
-            System.out.println("🔹 ВОПРОС 6 🔹 ");
-            System.out.println();
-            System.out.println("""
-                            какой химический элемент в периодической таблице обозначается символом “Au”?
-                            
-                            1. Алюминий
-                            2. Золото
-                            3. Серебро
-                            4. Медь
-                            """);
-                    System.out.print("Ответ: ");
-                    int answer6 = scanner.nextInt();
-                    if (answer6 == 2) {
-                        balance += 1000;
-                        System.out.println("ПОЗДРАВЛЯЮ! Вы ответили правильно +1000$ ");
-                        System.out.println();
-                        System.out.println("💰 " + "Ваш баланс: " + balance + "$");
-                    } else {
-                        System.out.println("НЕПРАВИЛЬНО");
-                        isgaming = false;
-                    }
-                }
-                if (isgaming) {
-            System.out.println("🔹 ВОПРОС 7 🔹 ");
-            System.out.println();
-            System.out.println("""
-                             Кто автор романа "Война и мир"?
-                            
-                            1. Фёдор Достоевский
-                            2. Лев Толстой
-                            3. Михаил Лермонтов
-                            4. Антон Чехов
-                            """);
-                    System.out.print("Ответ: ");
-                    int answer7 = scanner.nextInt();
-                    if (answer7 == 2) {
-                        balance += 1000;
-                        System.out.println("ПОЗДРАВЛЯЮ! Вы ответили правильно +1000$ ");
-                        System.out.println();
-                        System.out.println("💰 " + "Ваш баланс: " + balance + "$");
-                    } else {
-                        System.out.println("НЕПРАВИЛЬНО");
-                        isgaming = false;
-                    }
-                }
-                if (isgaming) {
-            System.out.println("🔹 ВОПРОС 8 🔹 ");
-            System.out.println();
-            System.out.println("""
-                            Какое самое высокое здание в мире?
-                            
-                            1. Бурдж-Халифа
-                            2. Останкинская башня
-                            3. Эйфелева башня
-                            4. Шанхайская башня
-                            """);
-                    System.out.print("Ответ: ");
-                    int answer8 = scanner.nextInt();
-                    if (answer8 == 1) {
-                        balance += 1000;
-                        System.out.println("ПОЗДРАВЛЯЮ! Вы ответили правильно +1000$ ");
-                        System.out.println();
-                        System.out.println("💰 " + "Ваш баланс: " + balance + "$");
-                    } else {
-                        System.out.println("НЕПРАВИЛЬНО");
-                        isgaming = false;
-                    }
-                }
-                if (isgaming) {
-            System.out.println("🔹 ВОПРОС 9 🔹 ");
-            System.out.println();
-            System.out.println("""
-                            Какая река является самой длинной в мире?
-                            
-                            1. Нил
-                            2. Амазонка
-                            3. Янцзы
-                            4. Миссисипи
-                            """);
-                    System.out.print("Ответ: ");
-                    int answer9 = scanner.nextInt();
-                    if (answer9 == 2) {
-                        balance += 1000;
-                        System.out.println("ПОЗДРАВЛЯЮ! Вы ответили правильно +1000$ ");
-                        System.out.println();
-                        System.out.println("💰 " + "Ваш баланс: " + balance + "$");
+                    ========================
+                    ПОЗДРАВЛЯЮ! ВЫ ПОБЕДИЛИ!
+                    ========================
+                    """);
 
-                    } else {
-                        System.out.println("НЕПРАВИЛЬНО");
-                        isgaming = false;
-                    }
-                }
-                if (isgaming) {
-            System.out.println("🔹 ВОПРОС 10 🔹 ");
-            System.out.println();
-            System.out.println("""
-                            Кто написал оперу "Кармен"?
-                            
-                            1. Джузеппе Верди
-                            2. Жорж Бизе
-                            3. Вольфганг Амадей Моцарт
-                            4. Рихард Вагнер
-                            """);
-                    System.out.print("Ответ: ");
-                    int answer10 = scanner.nextInt();
-                    if (answer10 == 2) {
-                        balance += 1000;
-                        System.out.println("ПОЗДРАВЛЯЮ! Вы ответили правильно +1000$ ");
-                        System.out.println();
-                        System.out.println("💰 " + "Ваш баланс: " + balance + "$");
-                        System.out.println();
-                        System.out.println("""
-                                ========================
-                                ПОЗДРАВЛЯЮ! ВЫ ПОБЕДИЛИ!
-                                ========================
-                                """);
-
-                    } else {
-                        System.out.println("НЕПРАВИЛЬНО");
-                        isgaming = false;
-                    }
-                }
+        } else {
+            System.out.println("НЕПРАВИЛЬНО");
+            isgaming = false;
+        }
+    }
     if (!isgaming) {
         System.out.println("ВЫ ПРОИГРАЛИ");
     }
-            }
+}
 
 
 

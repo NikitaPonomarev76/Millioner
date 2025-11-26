@@ -2,13 +2,19 @@
 //todo сделать баланс отдельной переменной и что при правильном ответе прибавлялись ему деньги
 //todo отредактируй красиво текст
 //todo перефразируй некоторый вопросы, а то они сформулированы не очень
-//todo перепиши код чтоб он выглядел красиво, добавь отдельную переменную которая будет true если игра идет и false если ответил не правильно оттуда дальше и плеши, над условиями попробуй сам подумать
+//todo перепиши код чтоб он выглядел красиво, добавь отдельную переменную которая будет
+//  true если игра идет и false если ответил не правильно оттуда дальше и плеши, над условиями попробуй сам подумать
 void main() {
     Scanner scanner = new Scanner(System.in);
-    System.out.println("Игра миллионер");
+    System.out.println("""
+            
+            
+            """);
+    System.out.println("   ИГРА МИЛЛИОНЕР");
     System.out.println("1 вопрос: ");
     System.out.println();
-    System.out.println("Как называется самая высокая гора в мире?");
+    int balance = 0;
+    System.out.println("Какая самая высокая гора в мире?");
 
     System.out.println("1. Килиманджаро");
     System.out.println("2. Эльбрус");
@@ -16,6 +22,18 @@ void main() {
     System.out.println("4. Эверест");
     System.out.print("Ответ: ");
     int answer = scanner.nextInt();
+    boolean isgaming = true;
+    if (answer == 4) {
+        int balance1 = balance + 1000;
+        System.out.println("Поздравляю вы ответили правильно");
+        System.out.println("Ваш баланс ");
+
+
+
+
+
+    }
+    int answer1 = scanner.nextInt();
     if (answer == 1) {
         System.out.println("Вы ответили неправильно игра закончена");
     } else if (answer == 2) {
@@ -23,7 +41,9 @@ void main() {
     } else if (answer == 3) {
         System.out.println("Вы ответили неправильно игра закончена");
     } else if (answer == 4) {
-        System.out.println("Вы ответили правильно, ваш баланс: 1000$");
+        int balance1 = balance + 1000;
+        System.out.println("Вы ответили правильно");
+        System.out.println("Ваш баланс: " + balance1 + "$");
         System.out.println();
         System.out.println("2 вопрос: ");
         System.out.println();
@@ -42,11 +62,13 @@ void main() {
         } else if (answer2 == 4) {
             System.out.println("Вы ответили неправильно игра закончена");
         } else if (answer2 == 2) {
-            System.out.println("Вы ответили правильно, ваш баланс: 2000$");
+            int balance2 = balance1 + 1000;
+            System.out.println("Вы ответили правильно");
+            System.out.println("Ваш баланс: " + balance2 + "$");
             System.out.println("""
                     3 вопрос:
                     
-                    Какая страна является самой большой по площади?
+                    Какая страна является самой большой по площади в мире?
                     
                     1. Россия
                     2. Канада
@@ -62,11 +84,13 @@ void main() {
             } else if (answer3 == 4) {
                 System.out.println("Вы ответили неправильно игра закончена");
             } else if (answer3 == 1) {
-                System.out.println("Вы ответили правильно, ваш баланс: 3000$");
+                int balance3 = balance2 + 1000;
+                System.out.println("Вы ответили правильно");
+                System.out.println("Ваш баланс: " + balance3 + "$");
                 System.out.println("""
                         4 вопрос:
                        
-                        Как называется столица Японии?
+                        Какой город является столицей Японии?
                         
                         1. Осака
                         2. Токио
@@ -82,11 +106,13 @@ void main() {
                 } else if (answer4 == 4) {
                     System.out.println("Вы ответили неправильно игра закончена");
                 } else if (answer4 == 2) {
-                    System.out.println("Вы ответили правильно, ваш баланс: 4000$");
+                    int balance4 = balance3 + 1000;
+                    System.out.println("Вы ответили правильно");
+                    System.out.println("Ваш баланс: " + balance4 + "$");
                     System.out.println("""
                             5 вопрос:
                             
-                            Какой химический элемент имеет символ O?
+                            Какой элемент периодической таблицы обозначается буквой "O"?
                             
                             1. Кислород
                             2. Озон
@@ -102,11 +128,13 @@ void main() {
                     } else if (answer5 == 4) {
                         System.out.println("Вы ответили неправильно игра закончена");
                     } else if (answer5 == 1) {
-                        System.out.println("Вы ответили правильно, ваш баланс: 5000$");
+                        int balance5 = balance4 + 1000;
+                        System.out.println("Вы ответили правильно");
+                        System.out.println("Ваш баланс: " + balance5 + "$");
                         System.out.println("""
                                 6 вопрос:
                                 
-                                Какой химический элемент имеет символ "Au"?
+                                какой химический элемент в периодической таблице обозначается символом “Au”?
                                 
                                 1. Алюминий
                                 2. Золото
@@ -122,7 +150,9 @@ void main() {
                         } else if (answer6 == 4) {
                             System.out.println("Вы ответили неправильно игра закончена");
                         } else if (answer6 == 2) {
-                            System.out.println("Вы ответили правильно, ваш баланс: 6000$");
+                            int balance6 = balance5 + 1000;
+                            System.out.println("Вы ответили правильно");
+                            System.out.println("Ваш баланс: " + balance6 + "$");
                             System.out.println("""
                                     7 вопрос:
                                     
@@ -142,11 +172,13 @@ void main() {
                             } else if (answer7 == 4) {
                                 System.out.println("Вы ответили неправильно игра закончена");
                             } else if (answer7 == 2) {
-                                System.out.println("Вы ответили правильно, ваш баланс: 7000$");
+                                int balance7 = balance6 + 1000;
+                                System.out.println("Вы ответили правильно");
+                                System.out.println("Ваш баланс: " + balance7 + "$");
                                 System.out.println("""
                                         8 вопрос:
                                         
-                                        Как называется самое высокое здание в мире?
+                                        Какое самое высокое здание в мире?
                                         
                                         1. Бурдж-Халифа
                                         2. Останкинская башня
@@ -162,7 +194,9 @@ void main() {
                                 } else if (answer8 == 4) {
                                     System.out.println("Вы ответили неправильно игра закончена");
                                 } else if (answer8 == 1) {
-                                    System.out.println("Вы ответили правильно, ваш баланс: 8000$");
+                                    int balance8 = balance7 + 1000;
+                                    System.out.println("Вы ответили правильно");
+                                    System.out.println("Ваш баланс: " + balance8 + "$");
                                     System.out.println("""
                                             9 вопрос:
                                             
@@ -182,7 +216,9 @@ void main() {
                                     } else if (answer9 == 4) {
                                         System.out.println("Вы ответили неправильно игра закончена");
                                     } else if (answer9 == 2) {
-                                        System.out.println("Вы ответили правильно, ваш баланс: 9000$");
+                                        int balance9 = balance8 + 1000;
+                                        System.out.println("Вы ответили правильно");
+                                        System.out.println("Ваш баланс: " + balance9 + "$");
                                         System.out.println("""
                                                 10 вопрос:
                                                 
@@ -202,7 +238,9 @@ void main() {
                                         } else if (answer10 == 4) {
                                             System.out.println("Вы ответили неправильно игра закончена");
                                         } else if (answer10 == 2) {
-                                            System.out.println("Вы ответили правильно, ваш баланс: 10000$");
+                                            int balance10 = balance9 + 1000;
+                                            System.out.println("Вы ответили правильно");
+                                            System.out.println("Ваш баланс: " + balance10 + "$");
                                             System.out.println();
                                             System.out.println("ПОЗДРАВЛЯЮ ВЫ ОТВЕТИЛИ НА ВСЕ ВОПРОСЫ ПРАВИЛЬНО ");
 

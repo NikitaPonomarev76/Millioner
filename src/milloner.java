@@ -1,40 +1,41 @@
 void main() {
     Scanner scanner = new Scanner(System.in);
     boolean isgaming = true;
-    if (isgaming) {
+    int balance = 0;
+    System.out.println();
+    System.out.println("""
+            ======================================
+                      ИГРА МИЛЛОНЕР
+            ======================================
+            """);
+    System.out.println("🔹 ВОПРОС 1 🔹 ");
+    System.out.println();
+    System.out.println("""
+            Какая самая высокая гора в мире?
+            
+            1. Килиманджаро
+            2. Эльбрус
+            3. Мауна-Кеа
+            4. Эверест
+            
+            """);
+    System.out.print("Ответ: ");
+    int answer1 = scanner.nextInt();
+    if (answer1 == 4) {
+        balance += 1000;
+        System.out.println("ПОЗДРАВЛЯЮ! Вы ответили правильно +1000$ ");
         System.out.println();
-        System.out.println("""
-                ======================================
-                          ИГРА МИЛЛОНЕР
-                ======================================
-                """);
-        System.out.println("🔹 ВОПРОС 1 🔹 ");
-        System.out.println();
-        int balance = 0;
-        System.out.println("""
-                Какая самая высокая гора в мире?
-                
-                1. Килиманджаро
-                2. Эльбрус
-                3. Мауна-Кеа
-                4. Эверест
-                
-                """);
-        System.out.print("Ответ: ");
-        int answer1 = scanner.nextInt();
-        if (answer1 == 4) {
-            balance += 1000;
-            System.out.println("ПОЗДРАВЛЯЮ! Вы ответили правильно +1000$ ");
-            System.out.println();
-            System.out.println( "💰 " + "Ваш баланс: " + balance + "$");
-        } else {
-            System.out.println("НЕПРАВИЛЬНО");
-            isgaming = false;
-        }
+        System.out.println("💰 " + "Ваш баланс: " + balance + "$");
+    } else {
+        System.out.println("НЕПРАВИЛЬНО");
+        isgaming = false;
+    }
+
+
         if (isgaming) {
-        System.out.println("🔹 ВОПРОС 2 🔹 ");
-        System.out.println();
-        System.out.println("""
+            System.out.println("🔹 ВОПРОС 2 🔹 ");
+            System.out.println();
+            System.out.println("""
                     Кто написал знаменитую пьесу "Ромео и Джульетта"?
                     
                     1. Лев Толстой
@@ -42,24 +43,26 @@ void main() {
                     3. Антон Чехов
                     4. Данте Алигьери
                     """);
-            System.out.print("Ответ:" );
+            System.out.print("Ответ:");
             int answer2 = scanner.nextInt();
             if (answer2 == 2) {
                 balance += 1000;
-            System.out.println("ПОЗДРАВЛЯЮ! Вы ответили правильно +1000$ ");
+                System.out.println("ПОЗДРАВЛЯЮ! Вы ответили правильно +1000$ ");
                 System.out.println();
-            System.out.println("💰 " + "Ваш баланс: " + balance + "$");
+                System.out.println("💰 " + "Ваш баланс: " + balance + "$");
 
             } else {
                 System.out.println("НЕПРАВИЛЬНО");
                 isgaming = false;
             }
+        }
+
 
 
             if (isgaming) {
-            System.out.println("🔹 ВОПРОС 3 🔹 ");
-            System.out.println();
-            System.out.println("""
+                System.out.println("🔹 ВОПРОС 3 🔹 ");
+                System.out.println();
+                System.out.println("""
                         Какая страна является самой большой  в мире?
                         
                         1. Россия
@@ -79,6 +82,7 @@ void main() {
                     System.out.println("НЕПРАВИЛЬНО");
                     isgaming = false;
                 }
+            }
                 if (isgaming) {
             System.out.println("🔹 ВОПРОС 4 🔹 ");
             System.out.println();
@@ -250,14 +254,12 @@ void main() {
                         isgaming = false;
                     }
                 }
-
-            }
-        }
-        }
     if (!isgaming) {
         System.out.println("ВЫ ПРОИГРАЛИ");
     }
-}
+            }
+
+
 
 
 

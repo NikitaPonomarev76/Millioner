@@ -44,7 +44,7 @@ class my3 {
         }
     }
 
-    void main() {
+    void main(String[] args) {
         choice1();
     }
 }
